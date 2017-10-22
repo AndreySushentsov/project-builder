@@ -1,0 +1,45 @@
+//color variables
+$text_color:#333333;
+$brand_color: #0e3e6d;
+$border_color: #383d8d;
+$red: #ac161e;
+.main-baner__wrapper{
+  height: 650px;
+  max-height: 650px;
+  overflow: hidden;
+  position: relative;
+}
+.main-baner__wrapper img{
+  position: absolute;
+  top:-80px;
+}
+.main-baner__title{
+  font-family: "GothaProBla", sans-serif;
+  position: absolute;
+  top: 31%;
+  left: 7%;
+  width: 80%;
+  font-size: 5rem;
+  color: #fff;
+  line-height: 1.25;
+}
+.main-baner__title span{
+  color: $red;
+}
+.main-baner__paragraph{
+  font-family: "GothaProReg", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-top: 16px;
+  margin-bottom: 23px;
+  width: 55%;
+  line-height: 1.6;
+}
+.main-baner__button_slider{
+  background-color: $red;
+  border-color: $red;
+  &:hover{
+    background-color:#7c1218;
+    border-color: #7c1218;
+  }
+}

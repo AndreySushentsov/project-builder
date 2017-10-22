@@ -4,4 +4,22 @@ block variables
   - var title = 'Home page'
 
 block content
-  div Првоерка текста
+  header.container
+    .row
+      .col-sm-3.header__logo
+        a(href="#").header__link
+          img(src="./assets/img/header_logo.png")
+      nav.col-sm-6.header__navigation
+        ul.header__navigation-list
+          -var items = ['продукция',"о компании","объекты","новости","контакты"];
+          each item in items
+            li.header__navigation-item
+              a(href="#")=item
+      .col-sm-3.header__phone
+        a(href="#" title="8-800-700-0537").header__link-phone 8-800-700-0537
+        a(href="#" title="rivaldecor@rival-decor.ru").header__link-email rivaldecor@rival-decor.ru
+  include ./main_baner
+  include ./products
+  include ./questions
+  include ./rival_decor
+

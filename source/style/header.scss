@@ -1,0 +1,41 @@
+//color variables
+$text_color:#333333;
+$brand_color: #0e3e6d;
+$border_color: #383d8d;
+
+.header__wrapper{
+  border: 1px solid $text_color;
+  height: 20px;
+}
+.header__navigation-list{
+  padding: 0;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 95%;
+}
+.header__navigation-list li{
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 13px;
+}
+.header__navigation-list li a{
+  //font-family: "GothaProBol", sans-serif;
+  color: $text_color;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+.header__phone{
+  text-align: right;
+}
+.header__phone a {
+  display: block;
+  &:hover{
+    text-decoration: none;
+  }
+}
+.header__link-phone{
+  font-size: 2.4rem;
+  font-weight: bold;
+}

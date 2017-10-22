@@ -1,0 +1,64 @@
+.rival__container{
+  height:750px;
+  width:100%;
+  font-size: 0;
+}
+.rival__title,.rival___description{
+  display: inline-block;
+  height: 750px;
+  font-size: 1rem;
+}
+.rival__title{
+  width: 33%;
+  background-color: #8696a6;
+  padding-top: 20%;
+  font-size: 12rem;
+  font-family: "GothaProBol", sans-serif;
+  line-height: 1;
+  color: #fff;
+  background-image: url("../img/about_bg.png");
+  background-position: center;
+}
+.rival__title div{
+  text-align: left;
+  width: 90%;
+  float: right;
+}
+.rival___description{
+  width: 67%;
+  vertical-align: top;
+  padding-left: 7.3%;
+  background-color: #fafafa;
+}
+.rival___text{
+  margin-top: 13%;
+  font-size: 1.3rem;
+  width: 90%;
+}
+.rival__text p{
+  margin-bottom: 10px;
+  line-height: 2;
+  text-align: justify;
+}
+@media (max-width: 1200px){
+  .rival__title div{
+    text-align: center;
+    width: 90%;
+    font-size: 9rem;
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px){
+  .rival__title,.rival___description{
+    display:block;
+    width: 100%;
+  }
+  .rival__title{
+    height: 200px;
+    text-align: center;
+    padding-top: 8%;
+  }
+
+}
