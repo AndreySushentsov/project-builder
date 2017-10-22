@@ -7,5 +7,5 @@
   // for(var i = 1; i<=rowLength; i++){
   //   if()
   // }
-
+    $('a[data-rel^=lightcase]').lightcase();
 })();
