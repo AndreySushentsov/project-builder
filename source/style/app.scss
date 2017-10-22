@@ -23,6 +23,7 @@ header{
 @import "form";
 
 .button{
+
   font-size: 1.4rem;
   padding: 10px 0px;
   border: 1px solid;
@@ -36,6 +37,7 @@ header{
   &:hover{
     text-decoration: none;
     color:#e8e8e8;
+    cursor: pointer;
   }
   &:after{
     display: block;
@@ -49,6 +51,24 @@ header{
   }
 }
 
+// стили для контроллеров слайдера
+.controls__container{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.controls__item{
+  width: 10px;
+  height:10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: $brand_color;
+  display: inline-block;
+  transition: 0.2s;
+  &:hover{
+    background-color: $red;
+  }
+}
 
 
 // секции страницы
@@ -57,3 +77,5 @@ header{
 @import "products";
 @import "questions";
 @import "rival_decor";
+@import "objects";
+@import "design_deсition";

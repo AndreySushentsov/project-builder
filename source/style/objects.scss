@@ -1,0 +1,70 @@
+//color variables
+$text_color:#333333;
+$brand_color: #0e3e6d;
+$border_color: #383d8d;
+$red: #ac161e;
+
+.objects__button{
+  margin-top: 30px;
+  margin-bottom: 75px;
+}
+
+.objects__title{
+  margin-top: 55px;
+  font-size: 4rem;
+  margin-bottom: 45px;
+}
+.object__item{
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+}
+.object__img-wrapper{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: linear-gradient(to bottom, #FFFFFF 0%, #020308 100%)
+  //background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 0%, rgba(102,102,102,0.89) 27%, rgba(102,102,102,0.86) 35%, rgba(71,71,71,0.77) 58%, rgba(44,44,44,0.73) 69%, rgba(43,43,43,0.71) 75%, rgba(0,0,0,0.65) 91%, rgba(17,17,17,0.64) 93%, rgba(28,28,28,0.62) 98%, rgba(19,19,19,0.61) 100%);
+}
+.object__title{
+  position: absolute;
+  bottom: 11%;
+  left: 7%;
+  color: #fff;
+  font-family: "GothaProBla", sans-serif;
+  font-size: 2rem;
+  text-align: left;
+  width: 80%;
+  vertical-align: bottom;
+}
+.object__title a{
+  display: block;
+  font-size: 1.3rem;
+  color:#fff;
+  width: 50%;
+  transition: 0.2s;
+  &:hover{
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+.object__title span{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.button_objects{
+  font-family: "GothaProBol", sans-serif;
+  text-transform: uppercase;
+  color: $brand_color;
+  border: 1px solid $brand_color;
+  margin: 0 auto;
+  &:after{
+    background-color: $brand_color;
+  }
+  &:hover{
+    background-color: $brand_color;
+    cursor: pointer;
+  }
+}

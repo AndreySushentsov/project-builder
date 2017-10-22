@@ -1,0 +1,18 @@
+.container
+    .row
+        .col-xs-12
+            .objects__title Объекты
+    .row
+        -var objects = [{'num':1, 'title':'Стадион в Ростове-на-Дону'}, {'num':2, 'title':'Колесо обозрения в Сочи'},{'num':3, 'title':'Цирк в Омске'}];
+        each object in objects
+            .col-xs-4
+                .object__item
+                    .object__img-wrapper
+                        img(src=`./assets/img/object-item_${object.num}.png`)
+                    .object__title
+                        span=object.title
+                        a(herf="#") Смотреть объект >
+    .row
+        .col-xs-12
+            .objects__button
+                div.button.button_objects быстрый заказ
