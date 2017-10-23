@@ -1,0 +1,34 @@
+//color variables
+$text_color:#333333;
+$brand_color: #0e3e6d;
+$border_color: #383d8d;
+$red: #ac161e;
+
+.page__navigation{
+  width: 100%;
+  height: 40px;
+  background-color: $brand_color;
+  font-family: "GothaProBol", sans-serif;
+}
+.page__navigation .page__navigation-main{
+  height: 40px;
+  line-height: 40px;
+}
+.page__navigation .page__navigation-main a{
+  vertical-align: middle;
+  color: #fff;
+}
+.page__navigation .header__navigation-list{
+  padding: 0;
+  margin-right: 0;
+  text-align: right;
+  height: 40px;
+  line-height: 40px;
+}
+.page__navigation .header__navigation-item{
+  height: 100%;
+  vertical-align: middle;
+}
+.page__navigation .header__navigation-item a{
+  color: #fff;
+}

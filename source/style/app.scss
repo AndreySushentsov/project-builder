@@ -70,6 +70,9 @@ header{
   }
 }
 
+// блоки
+@import "page_navigation";
+@import "advantages";
 
 // секции страницы
 @import "header";
