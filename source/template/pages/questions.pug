@@ -8,6 +8,8 @@
                 .form__block.form__block_right
                     form
                         input(type="text" name="name" placeholder="Ваше имя")
-                        input(type="email" name="email" placeholder="Ваш e-mail")
-                        input(type="tel" name="phone" placeholder="Ваш номер")
-                        input(type="submit" value= "Отправить").button
+                        .form__input-group
+                          input(type="email" name="email" placeholder="Ваш e-mail")
+                          input(type="tel" name="phone" placeholder="Ваш номер")
+                        .button.button__send 
+                          input(type="submit" value= "Отправить")
