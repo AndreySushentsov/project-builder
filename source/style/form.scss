@@ -45,10 +45,12 @@ input[placeholder]{
   height:43px;
   outline: 0;
   width: 45%;
-  margin-right:22px;
 }
 .form__block input::placeholder{
   color: #fff;
+}
+.form__block input[name="phone"]{
+  float: right;
 }
 .form__block input[name="name"]{
   display: block;
@@ -80,6 +82,10 @@ input[placeholder]{
 @media (max-width: 767px){
   .form__block input{
     width: 100%;
+  }
+  .form__block input[name="phone"]{
+    margin-top: 10px;
+    float: none;
   }
 }
 @media (max-width: 550px){
