@@ -1,3 +1,18 @@
+//color variables
+$text_color:#333333;
+$brand_color: #0e3e6d;
+$border_color: #383d8d;
+$red: #ac161e;
+
+.news__wrapper{
+  padding-bottom: 50px;
+}
+.news__title{
+  font-size: 4rem;
+  margin-top: 8%;
+  margin-bottom: 4%;
+  font-family: 'GothaProBol',sans-serif;
+}
 .news__wrapper ul{
   margin: 0;
   padding: 0;
@@ -8,8 +23,66 @@
     vertical-align: top;
     width: 25%;
     height: 240px;
-    border: 1px solid #000;
-    box-sizing: border-box;
     list-style-type: none;
     font-size: 1rem;
+}
+.news__img ,.news__img-2{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.news__img-2{
+  background-image: url("../img/news_item_2.png");
+}
+.news__img{
+  background-image: url("../img/news-item_1.png");
+}
+.news__content-item-wrapper{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20%;
+  min-height: 80%;
+  position: relative;
+}
+.news__span{
+  display: block;
+  font-family: 'GothaProLig',sans-serif;
+}
+
+.news__content{
+  margin-top: 6%;
+  font-family:'GothaProBla',sans-serif;
+  line-height: 1.4;
+  font-size: 1.3rem;
+
+}
+.news__link{
+  color: $text_color;
+  display: block;
+  margin-top: 6%;
+  position: absolute;
+  bottom: 0;
+  font-size: 1.4rem;
+  font-family:'GothaProBol',sans-serif;
+  transition: 0.2s;
+  &:hover{
+    text-decoration: none;
+  }
+}
+@media (max-width: 767px){
+  .news__wrapper ul li{
+      width: 50%;
+      height: 240px;
+  }
+}
+@media (max-width: 458px){
+  .news__wrapper{
+    text-align: center;
+  }
+  .news__wrapper ul li{
+      width: 90%;
+      margin: 0 auto;
+      height: 240px;
+  }
 }
