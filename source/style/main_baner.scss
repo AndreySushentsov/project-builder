@@ -3,6 +3,7 @@ $text_color:#333333;
 $brand_color: #0e3e6d;
 $border_color: #383d8d;
 $red: #ac161e;
+
 .main-baner__wrapper{
   height: 650px;
   max-height: 650px;
@@ -12,6 +13,7 @@ $red: #ac161e;
 .main-baner__wrapper img{
   position: absolute;
   top:-80px;
+  z-index: -1;
 }
 .main-baner__title{
   font-family: "GothaProBla", sans-serif;
@@ -41,5 +43,84 @@ $red: #ac161e;
   &:hover{
     background-color:#7c1218;
     border-color: #7c1218;
+  }
+}
+.main-baner__socials, .main-baner__sections-counter{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.main-baner__socials{
+  left: -2%;
+}
+.main-baner__socials li{
+  list-style-type: none;
+  margin-bottom: 40%;
+}
+.main-baner__socials li a{
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  &:hover{
+    cursor: pointer;
+    background: $brand_color;
+    color: #fff;
+  }
+}
+.main-baner__socials i{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-baner__sections-counter{
+  right: -2%;
+}
+.main-baner__sections-counter li{
+  font-size: 1.1rem;
+  margin-bottom: 40%;
+  list-style-type: none;
+}
+.main-baner__sections-counter li a{
+  color: $text_color;
+  display: block;
+  transition: 0.2s;
+  &:hover{
+    cursor: pointer;
+    font-family: "GothaProBol",sans-serif;
+    text-decoration: none;
+  }
+}
+@media (max-width: 800px){
+  .main-baner__socials{
+    left: 0%;
+  }
+  .main-baner__sections-counter{
+    right: 0%;
+  }
+
+}
+@media (max-width: 768px){
+  .main-baner__title{
+    top: 10%;
+  }
+}
+@media (max-width: 475px){
+  .main-baner__title{
+    top: 5%;
+    font-size: 4rem;
+  }
+}
+@media (max-width: 400px){
+  .main-baner__title{
+    top: 5%;
+    font-size: 3rem;
   }
 }

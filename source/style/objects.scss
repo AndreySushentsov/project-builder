@@ -18,6 +18,10 @@ $red: #ac161e;
   height: 450px;
   overflow: hidden;
   position: relative;
+  transition: 0.2s;
+  &:hover{
+    box-shadow: 0 0 25px #c8c8c8;
+  }
 }
 .object__img-wrapper{
   position: absolute;
@@ -66,5 +70,33 @@ $red: #ac161e;
   &:hover{
     background-color: $brand_color;
     cursor: pointer;
+  }
+}
+.objects__controls-container{
+  position: relative;
+  max-height: 450px;
+}
+.objects__controls.left__control{
+  left: -6%;
+  z-index: 100;
+}
+.objects__controls.right__control{
+  right: -6%;
+  z-index: 100;
+}
+@media (max-width: 1070px){
+  .objects__controls.left__control{
+    left: -3%;
+  }
+  .objects__controls.right__control{
+    right: -3%;
+  }
+}
+@media (max-width: 1070px){
+  .objects__controls.left__control{
+    left: 0%;
+  }
+  .objects__controls.right__control{
+    right: 0%;
   }
 }

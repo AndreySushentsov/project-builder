@@ -19,62 +19,15 @@ header{
   margin-bottom: 10px;
 }
 
-// блок форы на страницах
-@import "form";
-
-.button{
-
-  font-size: 1.4rem;
-  padding: 10px 0px;
-  border: 1px solid;
-  display: block;
-  width: 220px;
-  color: #fff;
-  text-align: center;
-  position: relative;
-  letter-spacing: 1px;
-  transition: 0.15s;
-  &:hover{
-    text-decoration: none;
-    color:#e8e8e8;
-    cursor: pointer;
-  }
-  &:after{
-    display: block;
-    content: '';
-    background-color: #fff;
-    position: absolute;
-    right: -10px;
-    top:18px;
-    height: 1px;
-    width: 22px;
-  }
-}
-
-// стили для контроллеров слайдера
-.controls__container{
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 15px;
-}
-.controls__item{
-  width: 10px;
-  height:10px;
-  margin-left: 5px;
-  margin-right: 5px;
-  background-color: $brand_color;
-  display: inline-block;
-  transition: 0.2s;
-  &:hover{
-    background-color: $red;
-  }
-}
-
 // блоки
 @import "page_navigation";
 @import "advantages";
+@import "controls";
+@import "button";
+@import "form";
+@import "modal";
 
-// секции страницы
+// секции страниц
 @import "header";
 @import "main_baner";
 @import "products";
@@ -88,3 +41,4 @@ header{
 @import "partners";
 @import "map";
 @import "footer";
+@import "productpage";

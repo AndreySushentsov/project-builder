@@ -25,6 +25,12 @@ $border_color: #383d8d;
   text-transform: uppercase;
   font-size: 11px;
   letter-spacing: 1px;
+  transition: 0.2s;
+  &:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: $brand_color;
+  }
 }
 .header__phone{
   text-align: right;

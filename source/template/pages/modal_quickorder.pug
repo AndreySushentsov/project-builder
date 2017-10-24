@@ -1,0 +1,13 @@
+.modal__window_quickorder
+  .modal__form-container
+    a(href="#").modal__close-btn
+      img(src="./assets/img/cross-out.svg")
+    .modal__title Быстрый заказ.
+    span Заполните форму и мы ваи перезвоним
+    form(method="post" action="").modal__form
+        input(type="text" name="name" placeholder="Ваше имя")
+        input(type="text" name="phone" placeholder="Ваш номер")
+        input(type="checkbox" )
+        span.modal__agree-span Я даю 
+          a(href="#") согласие на обработку персональных данных   
+        button.button.button_objects Отправить 

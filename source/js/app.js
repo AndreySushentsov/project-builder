@@ -8,4 +8,17 @@
   //   if()
   // }
     $('a[data-rel^=lightcase]').lightcase();
+
+    $('.modal__close-btn').on('click',function(e) {
+        e.preventDefault();
+        $('.modal__window').fadeOut('fast');
+        $('.modal__window_quickorder').fadeOut('fast');
+        $('.modal__window_product').fadeOut('fast');
+    })
+    $('.button_objects').on('click', function functionName() {
+      $('.modal__window_quickorder').fadeIn('fast');
+    })
+    $('.button_disign').on('click', function functionName() {
+      $('.modal__window_quickorder').fadeIn('fast');
+    })
 })();

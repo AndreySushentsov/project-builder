@@ -2,16 +2,23 @@
     .row
         .col-xs-12
             .objects__title Объекты
-    .row
-        -var objects = [{'num':1, 'title':'Стадион в Ростове-на-Дону'}, {'num':2, 'title':'Колесо обозрения в Сочи'},{'num':3, 'title':'Цирк в Омске'}];
-        each object in objects
-            .col-xs-4
-                .object__item
-                    .object__img-wrapper
-                        img(src=`./assets/img/object-item_${object.num}.png`)
-                    .object__title
-                        span=object.title
-                        a(href=`./assets/img/object-item_${object.num}.png` data-rel="lightcase") Смотреть объект >
+    div.objects__controls-container
+      .objects__controls.side__controls.left__control
+        a(href="#")
+          img(src="./assets/img/left_arrow.png")
+      .objects__controls.side__controls.right__control
+        a(href="#")
+          img(src="./assets/img/arrow.png")  
+      .row
+          -var objects = [{'num':1, 'title':'Стадион в Ростове-на-Дону'}, {'num':2, 'title':'Колесо обозрения в Сочи'},{'num':3, 'title':'Цирк в Омске'}];
+          each object in objects
+              .col-xs-4
+                  .object__item
+                      .object__img-wrapper
+                          img(src=`./assets/img/object-item_${object.num}.png`)
+                      .object__title
+                          span=object.title
+                          a(href=`./assets/img/object-item_${object.num}.png` data-rel="lightcase") Смотреть объект >
     .row
         .col-xs-12
             .objects__button

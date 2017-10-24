@@ -18,6 +18,7 @@ $red: #ac161e;
   position: relative;
   margin-bottom: 30px;
   padding-bottom: 20px;
+  transition: 0.2s;
   &:after{
     display: block;
     content: '';
@@ -27,6 +28,9 @@ $red: #ac161e;
     height: 1px;
     width: 22px;
     bottom: 48px;
+  }
+  &:hover{
+    box-shadow: 0 0 25px #c8c8c8;
   }
 }
 .product__container{
@@ -53,7 +57,6 @@ $red: #ac161e;
   height: 200px;
   width: 97%;
   overflow: hidden;
-  border: 1px solid $text_color;
   box-shadow: 10px 10px #f3f3f3;
   margin-left: -15px;
 }
