@@ -98,11 +98,16 @@ $red: #ac161e;
     right: -3%;
   }
 }
-@media (max-width: 1070px){
+@media (max-width: 998px){
   .objects__controls.left__control{
     left: 0%;
   }
   .objects__controls.right__control{
     right: 0%;
+  }
+}
+@media (max-width: 600px){
+  .object__item{
+    margin-left: 0;
   }
 }
