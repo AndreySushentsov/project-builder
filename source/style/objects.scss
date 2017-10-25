@@ -16,12 +16,17 @@ $red: #ac161e;
 }
 .object__item{
   height: 450px;
+  margin-left: 5%;
   overflow: hidden;
   position: relative;
   transition: 0.2s;
   &:hover{
     box-shadow: 0 0 25px #c8c8c8;
   }
+}
+.object__item img{
+  height: 100%;
+  width:auto;
 }
 .object__img-wrapper{
   position: absolute;
@@ -51,6 +56,7 @@ $red: #ac161e;
   &:hover{
     cursor: pointer;
     text-decoration: none;
+    color: $brand_color;
   }
 }
 .object__title span{
