@@ -30,16 +30,23 @@ block content
         .row 
             .col-xs-offset-1.col-xs-10.col-sm-offset-0.col-sm-6
               .page__slider-wrapper
-                .side__controls.left__control
-                  a(href="#")
-                    img(src="./assets/img/left_arrow.png")
-                .side__controls.right__control
-                  a(href="#")
-                    img(src="./assets/img/arrow.png") 
+                .page__arrows-container
+                //.side__controls.left__control
+                //  a(href="#")
+                //    img(src="./assets/img/left_arrow.png")
+                //.side__controls.right__control
+                //  a(href="#")
+                //    img(src="./assets/img/arrow.png")
                 .controls__container.page__slider-controls
-                    each link in [1,2,3,4,5] 
-                        a(href="#").controls__item    
-                img(src="./assets/img/inner_slider.png")  
+                    //each link in [1,2,3,4,5]
+                    //    a(href="#").controls__item
+                .page__slick
+                    .page__slick-item
+                        img(src="./assets/img/inner_slider.png")
+                    .page__slick-item
+                        img(src="./assets/img/about_bg.png")
+                    .page__slick-item
+                        img(src="./assets/img/news-item_1.png")
 
             .col-xs-offset-1.col-xs-10.col-sm-offset-0.col-sm-6  
               .page__social
@@ -54,7 +61,7 @@ block content
         .row
           each item in [1,2,3,4]
             .col-xs-6.col-sm-3
-              a(href="./assets/img/galery_item.png" data-rel="lightcase").page__galery-link
+              a(href="./assets/img/galery_item.png" data-fancybox="group").page__galery-link
                 img(src="./assets/img/galery_item.png")
         .row
             .col-xs-12

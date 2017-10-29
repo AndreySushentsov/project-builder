@@ -102,4 +102,28 @@ $red: #ac161e;
 .page__form-block-left{
   padding-top: 2%;
 }
+/* added*/
+.page__slick{
+  height: 100%;
+}
+.page__slick img{
+  min-height: 600px;
+  max-height: 610px;
+}
+.page__arrows-container .side__controls{
+  z-index: 100;
+}
+.page__slider-controls{
+  height: 20px;
+  width: 100px;
+  z-index: 100;
+}
+.page__slider-controls .slick-dots button:before{
+  background: #0e3e6d;
+  width: 10px;
+  height: 10px;
+}
+.page__slider-controls .slick-dots{
+  bottom:0;
+}
 // конец стилей для внутренней страинцы
