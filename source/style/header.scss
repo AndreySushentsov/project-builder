@@ -6,12 +6,35 @@ $border_color: #383d8d;
 .header__wrapper{
   border: 1px solid $text_color;
   height: 20px;
+  font-size: 0;
+}
+.header__logo, .header__navigation, .header__phone{
+  vertical-align: top;
+  display: inline-block;
+  font-size: 1;
+}
+.header__logo{
+  width: 20%;
+}
+.header__navigation{
+  width: 60%;
+  padding-left: 5%;
+}
+.header__phone{
+  width: 19%;
+  vertical-align: bottom;
+}
+.header__phone a{
+  display: block;
+  vertical-align: middle;
+  margin-top: 2%;
 }
 .header__navigation-list{
   padding: 0;
   margin: 0 auto;
   padding-top: 20px;
   width: 95%;
+  text-align: center;
 }
 .header__navigation-list li{
   display: inline-block;
@@ -44,4 +67,26 @@ $border_color: #383d8d;
 .header__link-phone{
   font-size: 2.4rem;
   font-weight: bold;
+}
+@media (max-width: 998px){
+  .header__logo, .header__navigation, .header__phone{
+    display:block;
+    width: 100%;
+  }
+  .header__phone{
+    position: absolute;
+    top:0;
+    right: 0;
+    line-height: 0.5;
+  }
+}
+@media (max-width: 500px){
+  .header__phone{
+    position: relative;
+    line-height: 0.5;
+    text-align: center;
+  }
+  .header__navigation{
+    margin-bottom: 4%;
+  }
 }

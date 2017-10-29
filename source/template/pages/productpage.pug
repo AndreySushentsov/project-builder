@@ -6,18 +6,18 @@ block variables
 block content
     header.container
         .row
-            .col-sm-3.header__logo
+          .col-xs-12
+            .header__logo
                 a(href="index.html").header__link
                     img(src="./assets/img/header_logo.png")
-            .col-sm-offset-6.col-sm-3.header__phone
+            .header__phone.page__header-phone
                 a(href="#" title="8-800-700-0537").header__link-phone 8-800-700-0537
                 a(href="#" title="rivaldecor@rival-decor.ru").header__link-email rivaldecor@rival-decor.ru
     .page__navigation
         .container
             .row
-                .col-sm-2.page__navigation-main
+                .page__navigation-main
                     a(href="index.html") < на главную
-                .col-sm-offset-3.col-sm-7
                     ul.header__navigation-list
                         -var items = ['продукция',"о компании","объекты","новости","контакты"];
                         each item in items
@@ -83,7 +83,7 @@ block content
         .row
             .col-xs-12
                 .form__wrapper.page__fonrm-wrapper
-                    .form__block.form__block_left
+                    .form__block.form__block_left.page__form-block-left
                         span.form__title Оставте заявку на быстрый расчет
                         span Наш менеджер свяжется с вами в течении дня
                     .form__block.form__block_right
